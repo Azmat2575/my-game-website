@@ -3,25 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultimate Game Zone</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gaming Zone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>🎮 Welcome to Ultimate Game Zone</h1>
-        <p>Choose your favorite game and start playing!</p>
-    </header>
-
-    <section class="games-list">
-        <a href="game1.html" class="game-card">🔥 Fighting Game</a>
-        <a href="game2.html" class="game-card">🏎️ Racing Game</a>
-        <a href="game3.html" class="game-card">🔫 Shooting Game</a>
-        <a href="game4.html" class="game-card">🐍 Snake Game</a>
-        <a href="game5.html" class="game-card">🧩 Puzzle Game</a>
-    </section>
-
-    <footer>
-        <p>© 2025 Ultimate Game Zone. All rights reserved.</p>
-    </footer>
+    <h1>🎮 Welcome to Gaming Zone 🎮</h1>
+    <div class="games">
+        <button onclick="startFightingGame()">Fighting Game 🥊</button>
+        <button onclick="startRacingGame()">Racing Game 🏎️</button>
+        <button onclick="startShootingGame()">Shooting Game 🔫</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <script src="script.js"></script>
 </body>
 </html>

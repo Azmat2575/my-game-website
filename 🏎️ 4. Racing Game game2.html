@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🏎️ Racing Game</h1>
+    </header>
+
+    <canvas id="raceCanvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById("raceCanvas");
+        const ctx = canvas.getContext("2d");
+
+        canvas.width = 800;
+        canvas.height = 400;
+
+        let car = { x: 400, y: 300, width: 50, height: 100, color: "blue" };
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = car.color;
+            ctx.fillRect(car.x, car.y, car.width, car.height);
+            requestAnimationFrame(draw);
+        }
+        draw();
+    </script>
+</body>
+</html>
